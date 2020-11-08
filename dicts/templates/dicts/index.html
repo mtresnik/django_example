@@ -5,12 +5,11 @@
 
 <body>
 	<script type="text/javascript">
+		
 		function parseQuotesJson(json_string){
 			return JSON.parse(json_string.replace(/&quot;/g,'\"').replace(/&#39;/g,"\'"));
 		}
-
-		console.log("{{example_dict}}")
-
+		
 		var example_dict = parseQuotesJson("{{example_dict}}");
 		console.log("example_dict", example_dict);
 	</script>
